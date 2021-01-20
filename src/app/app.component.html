@@ -1,27 +1,29 @@
-<!-- Toolbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/" routerLinkActive="active">
-            <img src="../assets/pngs/logo-ueg-white.png" width="40" alt="UEG Logo" class="d-inline-block align-top">
-        </a>
-        <div class="spacer"></div>
+<div style="overflow: hidden;">
+    <!-- Toolbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="/" routerLinkActive="active">
+                <img src="../assets/pngs/logo-ueg-white.png" width="40" alt="UEG Logo" class="d-inline-block align-top">
+            </a>
+            <div class="spacer"></div>
 
-        <button style="border: none; outline: none; color: transparent;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navbar-text" id="navbarNavAltMarkup" style="width: 100%; text-align: center;">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
-                <!-- <a class="nav-link" routerLink="/nova-cidade" routerLinkActive="active">Cidades</a> -->
-                <a class="nav-link" routerLink="/list-pontos" routerLinkActive="active">Pontos Turísticos</a>
+            <button style="border: none; outline: none; color: transparent;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-text" id="navbarNavAltMarkup" style="width: 100%; text-align: center;">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
+                    <!-- <a class="nav-link" routerLink="/nova-cidade" routerLinkActive="active">Cidades</a> -->
+                    <a class="nav-link" routerLink="/list-pontos" routerLinkActive="active">Pontos Turísticos</a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 
-<footer class="footer">
-    <i class="bi bi-file-code"></i>
-    <p>Desenvolvido por: Paulo ricardo e Matheus Vieira</p>
-</footer>
+    <!-- <footer class="footer">
+        <i class="bi bi-file-code"></i>
+        <p>Desenvolvido por: Paulo ricardo e Matheus Vieira</p>
+    </footer> -->
+</div>

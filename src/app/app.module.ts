@@ -9,6 +9,8 @@ import { HomeComponent } from './modules/home/home.component';
 import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
 import { NovaCidadeComponent } from './modules/nova-cidade/nova-cidade.component';
 import { ListCidadesComponent } from './modules/list-cidades/list-cidades.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CidadesService } from './services/cidades.service';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,9 @@ import { ListCidadesComponent } from './modules/list-cidades/list-cidades.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CidadesService, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,9 +2,12 @@
     <div class="container">
       <!-- Nova cidade -->
         <h2>Cidades e seus potos turísticos</h2>
+        <div *ngFor="let cidade of cidades">
+         Estado: <span>{{cidade.estado}}</span> 
+        </div>
         <hr><br>
         <div class="row">
-            <div class="col-md-4 offset-xs-12">
+            <div class="col-sm">
                 <div class="card card-app" style="width: 18rem;">
                     <img src="../../../assets/imgs/cidade.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -18,7 +21,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 offset-xs-12">
+            <div class="col-sm">
                 <div class="card card-app" style="width: 18rem;">
                     <img src="../../../assets/imgs/cidade.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -32,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 offset-xs-12">
+            <div class="col-sm">
                 <div class="card card-app" style="width: 18rem;">
                     <img src="../../../assets/imgs/cidade.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
