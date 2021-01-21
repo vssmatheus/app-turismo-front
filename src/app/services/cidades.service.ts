@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { take, map } from 'rxjs/operators';
-import { environment } from '../../environments/environment';
-/* import { CidadeModel } from '../../app/modules/list-pontos/cidade.model'; */
+import { map } from 'rxjs/operators';
+import { Cidade } from '../models/cidade.model';
 
 @Injectable({
   providedIn: 'root'
@@ -11,12 +10,17 @@ import { environment } from '../../environments/environment';
 
 export class CidadesService {
 
-  cidadesUrl = 'https://rpmshegoapp.herokuapp.com/cidades';
+  httpOtions = {
+    headers: new HttpHeaders({
+      'Content-Type' : 'application/json'
+    })
+  }
 
-  constructor(private http: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   listarCidades(): Observable<any>{
-    /* return this.http.get(""); */
-    return this.http.get(this.cidadesUrl).pipe(map(res => res));
+    const cidadesUrl = "https://rpmshegoapp.herokuapp.com/cidades"
+    const url = "https://jsonplaceholder.typicode.com/posts"
+    return this.httpClient.get<any>(cidadesUrl);
   }
 }
