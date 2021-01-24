@@ -1,54 +1,30 @@
 <div class="content" role="main">
-    <div class="container">
+    <div class="container" *ngFor="let cidade of cidades">
       <!-- Nova cidade -->
         <h2>Cidades e seus potos turísticos</h2>
-        <div *ngFor="let cidade of cidades">
-         Teste: <span>{{cidade.title}}</span> 
-        </div>
+        <!-- <div *ngFor="let cidade of cidades">
+         Teste: <span>{{cidade.estado}}</span> 
+        </div> -->
         <hr><br>
         <div class="row">
-            <div class="col-sm">
+            <div class="col-md">
                 <div class="card card-app" style="width: 18rem;">
-                    <img src="../../../assets/imgs/cidade.jpg" class="card-img-top" alt="...">
+                    <img src={{cidade.foto}} class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Rio de Janeiro - RJ</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">{{cidade.cidade}} - {{cidade.estado}}</h5>
+                      <p id="text-abrev" class="card-text">{{cidade.descricao}}</p><!-- card-text -->
+                      <!-- <div class="btn-vermais"><span id="click-lermais" class="vermais-text">Ler mais</span></div> -->
+                      <span style="font-size: 0.8rem; font-weight: 600; color: #777">Site: </span>
+                      <a class="card-link" target="_blank" href={{cidade.site}}>{{cidade.site}}</a>
                     </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cristo Redentor</li>
-                      <li class="list-group-item">Pão de Açúcar</li>
-                      <li class="list-group-item">Museu</li>
+                    <ul class="list-group list-group-flush" *ngFor="let ponto of cidades">
+                      <div class="card-body">
+                        <span class="subtitle">Principais potos Turísticos</span>
+                      </div>
+                      <li class="list-group-item">{{ponto.pontos}} </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-sm">
-                <div class="card card-app" style="width: 18rem;">
-                    <img src="../../../assets/imgs/cidade.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Rio de Janeiro - RJ</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cristo Redentor</li>
-                      <li class="list-group-item">Pão de Açúcar</li>
-                      <li class="list-group-item">Museu</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card card-app" style="width: 18rem;">
-                    <img src="../../../assets/imgs/cidade.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Rio de Janeiro - RJ</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Cristo Redentor</li>
-                      <li class="list-group-item">Pão de Açúcar</li>
-                      <li class="list-group-item">Museu</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
-</div>

@@ -64,6 +64,48 @@ p {
     box-shadow: 0px 0px 22px -9px rgba(0,0,0,0.75);
 }
 
+.card-link{
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.list-group-item{
+    font-size: small;
+    font-weight: 500;
+}
+
+.subtitle{
+    /* margin-bottom: 1px; */
+    font-weight: 500;
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-text{
+    /* overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; */ 
+    font-size: small;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.btn-vermais{
+    color: #1fb7da;
+    font-weight: 600;
+    font-size: 00.8rem;
+    margin-left: 2% 10px 2% 0;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.vermais-text{
+    cursor: pointer;
+}
+
 .btn-app{
     background: #1fb7da;
     outline: none;

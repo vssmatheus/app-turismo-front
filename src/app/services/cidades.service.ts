@@ -20,7 +20,7 @@ export class CidadesService {
 
   listarCidades(): Observable<any>{
     const cidadesUrl = "https://rpmshegoapp.herokuapp.com/cidades"
-    const url = "https://jsonplaceholder.typicode.com/posts"
+    const TesteUrl = "https://jsonplaceholder.typicode.com/posts"
     return this.httpClient.get<any>(cidadesUrl);
   }
 }
