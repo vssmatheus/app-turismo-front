@@ -1,0 +1,16 @@
+@import '../../app.component.css';
+
+#footer{
+    width: 100%;
+    position: relative;
+    padding: 25px 8px 25px;
+}
+footer{
+    text-align: center;
+    color: #777;
+    display: block;
+}
+
+footer>span{
+    font-size: 0.8rem;
+}

@@ -1,1 +1,36 @@
 @import '../../app.component.css';
+
+.bOEQyB {
+    padding: 30px;
+    height: 300px;
+    background: linear-gradient(
+        rgba(3, 24, 37, 0.7), 
+        rgb(0, 0, 0)
+      ), url('../../../assets/imgs/fg229560.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.hxbQWc {
+    margin: -110px auto 100px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content-img{
+    background-size: cover;
+}
+
+.card-img-top{
+    width: cover;
+    flex: 1;
+    background-size: cover;
+}

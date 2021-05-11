@@ -1,30 +1,35 @@
+<div class="styled__Wrapper-jnefx7-0 bOEQyB">
+    <div class="styled__Wrapper-sc-1269cb-0 duOVUa container">
+        <h1 class="styled__Title-sc-1269cb-1 eFAxJy">Turismo Brasileiro</h1>
+        <h4 class="styled__Desc-sc-1269cb-2 jekTQt">Conheça os pontos turísticos mais visitados do Brasil.</h4>
+        <br>
+        <div style="width: 80px; height: 3px; background:#1fb7da; margin: 0 auto;"></div>
+    </div>
+</div>
 <div class="content" role="main">
-    <div class="container" *ngFor="let cidade of cidades">
-      <!-- Nova cidade -->
-        <h2>Cidades e seus potos turísticos</h2>
-        <!-- <div *ngFor="let cidade of cidades">
-         Teste: <span>{{cidade.estado}}</span> 
-        </div> -->
-        <hr><br>
+    <div class="container hxbQWc">
         <div class="row">
-            <div class="col-md">
+            <div class="col" *ngFor="let cidade of cidades">
                 <div class="card card-app" style="width: 18rem;">
-                    <img src={{cidade.foto}} class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">{{cidade.cidade}} - {{cidade.estado}}</h5>
-                      <p id="text-abrev" class="card-text">{{cidade.descricao}}</p><!-- card-text -->
-                      <!-- <div class="btn-vermais"><span id="click-lermais" class="vermais-text">Ler mais</span></div> -->
-                      <span style="font-size: 0.8rem; font-weight: 600; color: #777">Site: </span>
-                      <a class="card-link" target="_blank" href={{cidade.site}}>{{cidade.site}}</a>
+                    <div class="content-img">
+                        <img src={{cidade.foto}} class="card-img-top" alt="...">
                     </div>
-                    <ul class="list-group list-group-flush" *ngFor="let ponto of cidades">
-                      <div class="card-body">
-                        <span class="subtitle">Principais potos Turísticos</span>
-                      </div>
-                      <li class="list-group-item">{{ponto.pontos}} </li>
+                    <div class="card-body">
+                        <h5 class="card-title">{{cidade.cidade}} - {{cidade.estado}}</h5>
+                        <p id="text-abrev" class="card-text">{{cidade.descricao}}</p>
+                        <!-- card-text -->
+                        <!-- <div class="btn-vermais"><span id="click-lermais" class="vermais-text">Ler mais</span></div> -->
+                        <span style="font-size: 0.8rem; font-weight: 600; color: #777">Site: </span>
+                        <a class="card-link" target="_blank" href={{cidade.site}}>{{cidade.site}}</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="card-body">
+                            <span class="subtitle">Principais potos Turísticos</span>
+                        </div>
+                        <li class="list-group-item">{{cidade.pontos}} </li>
                     </ul>
                 </div>
             </div>
-            </div>
         </div>
     </div>
+</div>

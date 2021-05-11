@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.c
 import { NovaCidadeComponent } from './modules/nova-cidade/nova-cidade.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CidadesService } from './services/cidades.service';
+import { FooterComponent } from './modules/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CidadesService } from './services/cidades.service';
     HomeComponent,
     PageNotFoundComponent,
     NovaCidadeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
